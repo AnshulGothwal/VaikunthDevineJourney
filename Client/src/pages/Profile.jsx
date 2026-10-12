@@ -24,7 +24,7 @@ function Profile() {
 
       try {
         const response = await fetch(
-          "http://localhost:5000/api/users/profile",
+          "https://vaikunth-backend.onrender.com/api/users/profile",
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -55,7 +55,7 @@ function Profile() {
     if (!token) return;
     try {
       const response = await fetch(
-        "http://localhost:5000/api/favorites/list",
+        "http://https://vaikunth-backend.onrender.com/api/favorites/list",
         {
           headers: {
             Authorization: `Bearer ${token}`,

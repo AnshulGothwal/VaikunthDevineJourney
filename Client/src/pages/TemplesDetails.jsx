@@ -10,7 +10,7 @@ function TempleDetails() {
   const [favoriteLoading, setFavoriteLoading] = useState(false);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/temples")
+    fetch("https://vaikunth-backend.onrender.com/api/temples")
       .then((res) => res.json())
       .then((data) => {
         const foundTemple = data.find(
@@ -31,7 +31,7 @@ function TempleDetails() {
       if (!temple?._id || !token) return;
       try {
         const response = await fetch(
-          "http://localhost:5000/api/favorites/list",
+          "https://vaikunth-backend.onrender.com/api/favorites/list",
           {
             headers: {
               Authorization: `Bearer ${token}`,
@@ -72,7 +72,7 @@ function TempleDetails() {
 
   try {
     const response = await fetch(
-      `http://localhost:5000/api/favorites/${
+      `https://vaikunth-backend.onrender.com/api/favorites/${
         isFavorite ? "remove" : "add"
       }`,
       {

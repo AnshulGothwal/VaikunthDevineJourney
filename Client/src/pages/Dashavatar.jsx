@@ -7,7 +7,7 @@ function Dashavatar(){
     const [selectedYuga, setSelectedYuga] = useState("All");
 
     useEffect(()=>{
-        fetch("http://localhost:5000/api/avatars")
+        fetch("https://vaikunth-backend.onrender.com/api/avatars")
         .then((res)=> res.json())
         .then((data)=> setAvatar(data))
         .catch((error)=> console.log("Avatar fetch error:",error));

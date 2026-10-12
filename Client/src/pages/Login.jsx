@@ -19,7 +19,7 @@ setLoading(true);
 
 try {
   const response = await fetch(
-    "http://localhost:5000/api/users/login",
+    "https://vaikunth-backend.onrender.com/api/users/login",
     {
       method: "POST",
       headers: {
@@ -38,7 +38,7 @@ try {
   localStorage.setItem("token", data.token);
 
   const profileResponse = await fetch(
-    "http://localhost:5000/api/users/profile",
+    "http://https://vaikunth-backend.onrender.com/api/users/profile",
     {
       headers: {
         Authorization: `Bearer ${data.token}`,

@@ -6,7 +6,7 @@ const [temples, setTemples] = useState([]);
 const [loading, setLoading] = useState(true);
 
 useEffect(() => {
-fetch("http://localhost:5000/api/temples")
+fetch("https://vaikunth-backend.onrender.com/api/temples")
 .then((response) => {
 if (!response.ok) {
 throw new Error("Failed to fetch temples");

@@ -13,7 +13,7 @@ function StoryDetails() {
     const fetchStory = async () => {
       try {
         const response = await fetch(
-          "http://localhost:5000/api/stories"
+          "https://vaikunth-backend.onrender.com/api/stories"
         );
 
         if (!response.ok) {
@@ -40,7 +40,7 @@ function StoryDetails() {
           if (!story?._id || !token) return;
           try {
             const response = await fetch(
-              "http://localhost:5000/api/favorites/list",
+              "https://vaikunth-backend.onrender.com/api/favorites/list",
               {
                 headers: {
                   Authorization: `Bearer ${token}`,
@@ -92,7 +92,7 @@ function StoryDetails() {
 
       try {
         const response = await fetch(
-          `http://localhost:5000/api/favorites/${
+          `https://vaikunth-backend.onrender.com/api/favorites/${
             isFavorite ? "remove" : "add"
           }`,
           {

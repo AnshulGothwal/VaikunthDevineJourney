@@ -10,8 +10,8 @@ function VishnuPuran() {
     const fetchData = async () => {
       try {
         const [storiesRes, shloksRes] = await Promise.all([
-          fetch("http://localhost:5000/api/stories"),
-          fetch("http://localhost:5000/api/shloks"),
+          fetch("https://vaikunth-backend.onrender.com/api/stories"),
+          fetch("https://vaikunth-backend.onrender.com/api/shloks"),
         ]);
 
         if (!storiesRes.ok || !shloksRes.ok) {

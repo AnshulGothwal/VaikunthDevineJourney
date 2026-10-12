@@ -7,7 +7,7 @@ const [stories, setStories] = useState([]);
 useEffect(() => {
 const fetchStories = async () => {
 try {
-const response = await fetch("http://localhost:5000/api/stories");
+const response = await fetch("https://vaikunth-backend.onrender.com/api/stories");
 const data = await response.json();
 
     if (response.ok) {

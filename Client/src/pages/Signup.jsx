@@ -16,7 +16,7 @@ setError("");
 setLoading(true);
 try {
   const response = await fetch(
-    "http://localhost:5000/api/users/signup",
+    "https://vaikunth-backend.onrender.com/api/users/signup",
     {
       method: "POST",
       headers: {
