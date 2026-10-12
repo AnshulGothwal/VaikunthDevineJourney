@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #0b1020;
+}
+
+body::before{
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: url("/images/wallpaper.jpg") center / cover no-repeat;
+  filter: blur(1.5px) brightness(0.5);
+  transform: scale(1.0);
+  z-index: 0;
+  pointer-events: none;
+}
+
+#root{
+  position: relative;
+  z-index: 1;
+  min-height: 100vh;
+}
