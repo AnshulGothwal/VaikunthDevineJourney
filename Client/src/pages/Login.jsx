@@ -38,7 +38,7 @@ try {
   localStorage.setItem("token", data.token);
 
   const profileResponse = await fetch(
-    "http://https://vaikunth-backend.onrender.com/api/users/profile",
+    "https://vaikunth-backend.onrender.com/api/users/profile",
     {
       headers: {
         Authorization: `Bearer ${data.token}`,

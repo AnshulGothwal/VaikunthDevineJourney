@@ -16,7 +16,7 @@ function AvatarDetail() {
     async function fetchData() {
       try {
         const avatarRes = await fetch(
-          "http://https://vaikunth-backend.onrender.com/api/avatars"
+          "https://vaikunth-backend.onrender.com/api/avatars"
         );
 
         const avatarData = await avatarRes.json();
@@ -42,7 +42,7 @@ function AvatarDetail() {
     if (!avatar?._id || !token) return;
     try {
       const response = await fetch(
-        "http://https://vaikunth-backend.onrender.com/api/favorites/list",
+        "https://vaikunth-backend.onrender.com/api/favorites/list",
         {
           headers: {
             Authorization: `Bearer ${token}`,
