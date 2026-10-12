@@ -61,15 +61,27 @@ function Navbar() {
            {user ? (
                   <>
                     <NavLink className="flex-1 text-center rounded-full border border-amber-400 px-4 py-2 text-sm text-amber-300" to="/profile">Profile</NavLink>
-                    <button className="flex-1 text-center rounded-full border border-amber-400 px-4 py-2 text-sm text-amber-300" onClick={handleLogout}>
+                    <button className="flex-1 text-center rounded-full border border-amber-400 px-4 py-2 text-sm text-amber-300" onClick={handle}>
                       Logout
                     </button>
                   </>
                 ) : (
-                  <>
-                    <NavLink className="flex-1 text-center rounded-full border border-amber-400 px-4 py-2 text-sm text-amber-300"  to="/login">Login</NavLink>
-                    <NavLink className="flex-1 text-center rounded-full bg-amber-400 px-4 py-2 text-sm font-semibold text-slate-950" to="/signup">Sign Up</NavLink>
-                  </>
+<>
+  <NavLink
+    to="/login"
+    className="flex-1 whitespace-nowrap rounded-full border border-amber-400 px-5 py-2.5 text-center text-sm font-semibold text-amber-300 transition-all duration-300 hover:bg-amber-400 hover:text-slate-950"
+  >
+    Login
+  </NavLink>
+
+  <NavLink
+    to="/signup"
+    className="flex-1 whitespace-nowrap rounded-full bg-amber-400 px-5 py-2.5 text-center text-sm font-bold text-slate-950 shadow-md transition-all duration-300 hover:bg-amber-300 hover:shadow-lg active:scale-95"
+  >
+    Sign Up
+  </NavLink>
+</>
+
                 )}
         </div>
 

@@ -117,11 +117,11 @@ const handleFavorite = async () => {
   return (
     <div className="min-h-screen px-4 py-10 text-white sm:px-8">
       {/* Hero */}
-      <section className="relative flex min-h-[50vh] items-end overflow-hidden rounded-3xl border border-amber-400/30">
+      <section className="relative flex min-h-[50vh] items-end overflow-hidden rounded-3xl border border-amber-400/30 lg:min-h-[75vh] lg:w-[85%] lg:mx-auto">
         <img
           src={avatar.image}
           alt={avatar.name}
-          className="absolute inset-0 h-full w-full object-cover object-top"
+         className="absolute inset-0 h-full w-full object-cover object-top lg:object-contain lg:object-center"
         />
 
         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
