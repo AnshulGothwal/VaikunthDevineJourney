@@ -47,6 +47,8 @@ try {
   );
 
   const profileData = await profileResponse.json();
+  console.log("Profile status:", profileResponse.status);
+  console.log("Profile data:", profileData);
 
   if (!profileResponse.ok) {
     throw new Error(
@@ -55,6 +57,7 @@ try {
   }
 
   setUser(profileData);
+  console.log("Login successful, navigating home");
   navigate("/");
 } catch (error) {
   setError(

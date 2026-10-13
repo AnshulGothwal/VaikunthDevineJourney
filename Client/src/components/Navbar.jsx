@@ -61,7 +61,7 @@ function Navbar() {
            {user ? (
                   <>
                     <NavLink className="flex-1 text-center rounded-full border border-amber-400 px-4 py-2 text-sm text-amber-300" to="/profile">Profile</NavLink>
-                    <button className="flex-1 text-center rounded-full border border-amber-400 px-4 py-2 text-sm text-amber-300" onClick={handle}>
+                    <button className="flex-1 text-center rounded-full border border-amber-400 px-4 py-2 text-sm text-amber-300" onClick={handleLogout}>
                       Logout
                     </button>
                   </>
